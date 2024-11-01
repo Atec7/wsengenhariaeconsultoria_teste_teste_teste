@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indicação de Serviços</title>
+    <link rel="stylesheet" href="indicacao.css">
+    <link class="ico" rel="icon" href="img/logo2.jpg">
+    <style>
+        /* Estilo da mensagem de política de cookies */
+        #cookieConsent {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            z-index: 1000;
+        }
+        #cookieConsent button {
+            background-color: #444;
+            color: white;
+            border: none;
+            padding: 0.5em 1em;
+            cursor: pointer;
+        }
+        /* Centraliza campos do formulário à esquerda */
+        .form-section {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 0 auto;
+            max-width: 500px;
+        }
+        /* Centraliza o link e texto no meio */
+        .center-text {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    </header>
+    <section class="form-section">
+        <h1>WS Engenharia, Consultoria e Treinamentos</h1>
+        <p>Indicação Para Prestação de Serviços</p>
+        <form id="indicacaoForm">
+            <label for="yourName">Seu Nome:</label>
+            <input type="text" id="yourName" name="yourName" required>
+            <label for="yourContact">Nome do Cliente:</label>
+            <input type="text" id="yourContact" name="yourContact" required>
+            <label for="clientContact">Contato do Cliente:</label>
+            <input type="text" id="clientContact" name="clientContact" required>
+            <label for="service">Serviço Indicado:</label>
+            <input type="text" id="service" name="service" required>
+            <button type="submit">Finalizar Indicação</button>
+        </form>
+    </section>
+     <footer>
+        <div class="container">
+            <p>&copy; 2024 Ws Engenharia, consultoria e treinamentos.
+            <br> <p3>Cnpj: 41.467.540/0001-67</p3>
+            
+            <br>
+            Todos os direitos reservados.</p>
+            <a class="link-atecseven" href="https://atec7.github.io/atecseven.com.br/">Power Bi &copf; Atecseven tecnologia</a>
+        </div>
+    </footer>
+    
+    <!-- Mensagem de política de cookies -->
+    <div id="cookieConsent">
+        Este site utiliza cookies para melhorar a experiência do usuário. 
+        <button onclick="document.getElementById('cookieConsent').style.display='none';">Aceitar</button>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.getElementById('indicacaoForm');
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const yourName = document.getElementById('yourName').value;
+                const yourContact = document.getElementById('yourContact').value;
+                const clientContact = document.getElementById('clientContact').value;
+                const service = document.getElementById('service').value;
+const message = `*INDICAÇÃO PARA PRESTAÇÃO DE SERVIÇO* \n 
+_(via site)_ :\n\n
+    *Meu Nome:* ${yourName}
+\n\n*Cliente:* ${yourContact}\n
+    *Contato do Cliente:* ${clientContact}\n
+    *Serviço Indicado:* ${service}\n\n www.wsengenhariaa.com.br \n        coprygth©2024 `;
+                const whatsappUrl = `https://wa.me/5564992952748?text=${encodeURIComponent(message)}`;
+                window.open(whatsappUrl, '_blank');
+            });
+        });
+    </script>
+</body>
+</html>

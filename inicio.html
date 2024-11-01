@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ws Engenharia</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link class="ico" rel="icon" href="img/logo2.jpg">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .baixar{
+          align-items:center;
+          color: green;
+          background-color: white;
+          border-radius: 10px;
+          border-style: solid;
+          border-top-color: #333;
+          transition: color 0.4s;
+        }
+        :hover .baixar{
+          transform: scale(1.05);
+          color: white;
+          background-color: #333;
+          transition-duration: 0.4s;
+          transition: color 0.1s, background-color 0.1s;
+        }
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(0,0,0,0.8);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .cookie-banner p {
+            margin: 0;
+            padding-right: 10px;
+        }
+        .cookie-banner button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+        .cookie-banner button:hover {
+            background-color: #45a049;
+        }
+        .engrenagem{
+          border-radius: 50%;
+          width:80px;
+          text-align: center;
+          display: inline-block;
+            position: relative;
+            border: 5px;
+            border-radius: 50%;
+            padding: 2px;
+            animation: spin 3.0s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="indicacao.html">Indicações</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="hero">
+        <div class="apresentação">
+          <img class="engrenagem" src="img/engrenagem2.png">
+            <h1>WS Engenharia Consultoria <br>e Treinamentos</h1>
+            <img class="logo" src="img/logo2.jpg" alt="">
+            <p>Sempre Trabalhando para oferecer Soluções inovadoras para o seu negócio!</p>
+        </div>
+    </section>
+    <section id="about" class="container">
+        <h2>Apresentação Institucional</h2>
+        <div>
+          <ul>
+            <li>
+              <p>Baixe nossa apresentação institucional agora mesmo<br>
+          e saiba mais sobre quem somos e 
+          como poderemos ajudá-lo hoje.
+        </p>
+            </li>
+          </ul>
+        </div>
+        
+        <a
+        href="https://docs.google.com/presentation/d/1-5L42WvUmQFoZtTRJaWzmeVjcs80qMKt/edit?usp=drivesdk&ouid=101589177118438174322&rtpof=true&sd=true">
+                <button class="baixar">Baixar</button>
+            </a>
+    </section>
+    <section id="about" class="container">
+        <h2>Sobre Nós</h2>
+        <p>Ws Engenharia, Consultoria e Treinamentos é líder em soluções
+        corporativas, oferecendo serviços de alta qualidade e projetos
+        inovadores. Possui ainda um vasto catálogo de Treinamentos sempre
+        atualizados com as legislações mais atuais, para que você e sua empresa
+        estejam sempre em conformidade.</p>
+    </section>
+    
+    <section id="services" class="container">
+        <h2>Serviços</h2>
+        <ul>
+            <li>Consultoria Empresarial.</li>
+            <li>Desenvolvimento de Sistemas de Segurança do Trabalho.</li>
+            <li>Treinamentos NR's (certificações).</li>
+            <li>Treinamentos Corporativos.</li>
+            <li>Consultoria Empresarial</li>
+            <li><a class="link-servicos" href="servicos.html">acesse nossos Serviços e saiba mais. </a> </li>
+        </ul>
+    </section>
+    <section id="contact" class="container">
+        <h2>Contato</h2>
+        <p>Comercial: <br> <br>
+        (75) 9 9189-3667 <br> <br>
+        wsengenhariaa@gmail.com <br>
+        </p>
+        
+        <p>ou se Preferir <br> <br>
+          Entre em contato conosco através das nossas redes sociais:</p>
+        <div class="social-links">
+            <a href="https://wa.me/5564992952748?text=Ol%C3%A1%20WSENGENHARIA!%20Vi%20seu%20site%20e%20gostaria%20de%20contratar%20alguns%20de%20seus%20servi%C3%A7os.%20pode%20me%20atender%20no%20momento%20?" target="_blank">
+                <img class="links" src="img/whatsaapp-logo.png" alt="WhatsApp">
+            </a>
+            <a href="https://www.instagram.com/https://www.instagram.com/atecseven_tecnologia/profilecard/?igsh=MTN5dTMwd3hmMmJ4ZQ== " target="_blank">
+                <img src="img/instagram-logo.png" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com/seu-usuario" target="_blank">
+                <img src="img/facebook-logo.png" alt="Facebook">
+            </a>
+            <a href="https://www.linkedin.com/in/seu-usuario" target="_blank">
+                <img src="img/linkedin-logo.png" alt="LinkedIn">
+            </a>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Ws Engenharia, consultoria e treinamentos.
+            <br> <p3>Cnpj: 41.467.540/0001-67</p3>
+            
+            <br>
+            Todos os direitos reservados.</p>
+            <a class="link-atecseven" href="https://atec7.github.io/atecseven.com.br/">Power Bi &copf; Atecseven tecnologia</a>
+        </div>
+    </footer>
+    <div class="cookie-banner">
+        <p>Utilizamos cookies para garantir a melhor experiência em nosso site. <a href="politica_de_cookies.html" style="color: #4CAF50;">Saiba mais</a></p>
+        <button onclick="this.parentElement.style.display='none';">Aceitar</button>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,300 @@
+/* Estilos globais */
+
+* {
+
+    box-sizing: border-box;
+}
+
+.ico{
+  border-radius: 50%;
+  border-style: solid;
+  border-color: green;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+}
+
+header .container {
+  color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header .logo {
+    height: 100px;
+    width: 100%;
+    border-radius: 50%;
+}
+
+header nav ul {
+  color: #333;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;  /* Adicionado para garantir que os links fiquem lado a lado e não empilhem */
+    justify-content: center;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Seção Hero */
+#hero {
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+#hero h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+#hero p {
+    font-size: 1.5em;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+/* Apresentação */
+.apresentação {
+  border-radius: 10px;
+    width: 96%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.apresentação:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Logo */
+.logo {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+}
+
+.logo:hover {
+    transform: scale(1.00);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Seções */
+section {
+  color: #333;
+    margin: 40px 0;
+}
+
+/* Links sociais */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.links {
+    border-radius: 50%;
+    border-style: solid;
+    border-color: white;
+}
+
+.social-links a img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.social-links a img:hover {
+    transform: scale(1.2);
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.link-atecseven {
+    text-emphasis: none;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: aqua;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.link-atecseven:hover {
+    color: white;
+    background-color: rgb(4, 4, 85);
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.link-servicos {
+
+    text-emphasis: none;
+
+    text-decoration: none;
+    font-size: 17px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.servicos {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    width: 100%; /* Largura padrão para dispositivos móveis */
+}
+
+@media (min-width: 768px) {
+    .servicos {
+        width: 40%; /* Largura para computadores */
+    }
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #hero {
+        padding: 50px 0;
+    }
+
+    #hero h1 {
+        font-size: 2em;
+    }
+
+    #hero p {
+        font-size: 1.2em;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    header nav ul {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    header nav ul li {
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header nav ul {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    header nav ul li {
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    .apresentação {
+        padding: 20px 0;
+    }
+}
+
+button {
+    margin-left: 10%;
+    margin-right: auto;
+    width: 290px;
+    padding: 10px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #3e8e41;
+}
+
+.dono{
+  border-radius: 50%;
+  border-style: solid;
+  border-color: black;
+  padding-left: 20% 300px;
+  text-align: center;
+  width: 200px;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.dono-text{
+  text-align:center;
+}
+
+.areas{
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  display: inline-block, flex;
+  margin-right: 10px;
+  vertical-align: top;
+  padding-left: 20% 300px;
+  margin-left: center;
+  margin-right: center;
+}
+.center{
+  align-items: center;
+}
